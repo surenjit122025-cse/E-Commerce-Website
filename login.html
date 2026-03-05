@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="jpg" href="Project photo.jpg">
+    <title>SurAsha Couture - Online Shopping</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .Login-form {
+            background-color: #43e96c;
+            width: 360px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 1px 10px 1000px rgb(81, 249, 117);
+            text-align: center;
+            transition: transform 0.3s ease-out;
+        }
+
+        .Login-form:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 1000px rgb(0, 255, 51);
+            transition: 0.3s ease-in;
+
+        }
+
+        .Login-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+            color: #ff4b2b;
+        }
+
+        .detail-box .box {
+            background-color: rgb(240, 252, 252);
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .detail-box .box:focus {
+            border-color: #f53614;
+            box-shadow: 0px 0px 17px rgba(255, 75, 43, 0.5);
+        }
+
+        .button {
+            margin-top: 15px;
+        }
+
+        .btn {
+            background: #eb0a7e;
+            color: white;
+            font-weight: bolder;
+            padding: 10px 25px;
+            border: none;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ff35b8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Login-form">
+        <h2>Enter Your Details</h2>
+
+        <form action="Buynow.html" method="post">
+            <div class="detail-box">
+                <input type="text" class="box" name="name" minlength="3" required placeholder="Enter Name"><br>
+                <input type="tel" class="box" name="phone" minlength="10" maxlength="10" required
+                    placeholder="Enter Mobile Number"><br>
+                <input type="text" class="box" name="areaname" minlength="7" required
+                    placeholder="Enter Area Name Name"><br>
+                <input type="text" class="box" name="housename" minlength="5" required
+                    placeholder="Enter House Name"><br>
+                <input type="text" class="box" name="landmark" minlength="5" placeholder="Landmark(Optional)*"><br>
+                <input type="text" class="box" name="address" minlength="20" maxlength="100" required
+                    placeholder="Enter Address"><br>
+            </div>
+
+            <div class="button">
+                <a href="Mens.html" class="btn">Back</a>
+                <button type="submit" class="btn">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
